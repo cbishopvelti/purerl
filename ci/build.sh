@@ -23,7 +23,8 @@ set -ex
 
 STACK="stack --no-terminal --jobs=2"
 
-STACK_OPTS="--test"
+# Disable until deps are set up
+# STACK_OPTS="--test"
 if [ "$CI_RELEASE" = "true" ]
 then
   STACK_OPTS="$STACK_OPTS --flag=purerl:RELEASE"
